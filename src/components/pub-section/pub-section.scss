@@ -1,0 +1,16 @@
+.c-pub-section {
+  margin-bottom: 56px;
+  @include media-breakpoint-down(md){
+    margin-bottom: 20px;
+  }
+  .col-12 {
+    a {
+      @include media-breakpoint-down(xl) {
+        aspect-ratio: 1224/200;
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+}

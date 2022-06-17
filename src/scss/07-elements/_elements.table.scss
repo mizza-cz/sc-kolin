@@ -1,0 +1,25 @@
+table {
+  width: 100%;
+  border-spacing: 0;
+  min-width: max-content;
+}
+th{
+  background-color: var(--color-light-gray) !important;
+  border-bottom: 1px solid var(--color-blue);
+  padding-top: 7px !important;
+  padding-bottom: 6px !important;
+}
+tr:nth-child(even){
+  background-color: var(--color-light-gray) !important;
+}
+th,td{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  padding-left: 11px !important;
+  padding-right: 11px !important;
+}
+td{
+  padding-top: 5px !important;
+  padding-bottom: 4px !important;
+}

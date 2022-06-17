@@ -1,0 +1,21 @@
+.link{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   height: 42px;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 20px;
+   letter-spacing: 0.14em;
+   color: var(--color-blue);
+   position: relative;
+   text-align: center;
+   text-decoration-color: transparent;
+   transition: text-decoration-color 0.3s;
+   svg{
+      margin-left: 16px;
+   }
+   &:hover{
+      text-decoration-color: var(--color-blue);
+   }
+}
