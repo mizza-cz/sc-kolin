@@ -1,0 +1,22 @@
+.menu-section {
+  padding-top: 48px;
+  margin-bottom: 34px;
+  color: var(--color-blue);
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 20px;
+    padding-bottom: 0.5rem;
+  }
+  &__inner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include media-breakpoint-down(xxl) {
+      flex-wrap: wrap;
+    }
+
+    @include media-breakpoint-down(sm) {
+      align-items: flex-start;
+    }
+  }
+}
