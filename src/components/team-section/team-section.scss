@@ -1,164 +1,67 @@
-.team {
-  .c-team-section__img img {
-    object-position: 0 24px;
-  }
-  .c-team-section__item:hover {
-    .c-team-section__img{
-      transform: scale(1.1);
-    }
-    .c-team-section__hover{
-      display: none;
-    }
-    .c-team-section__info{
-      transform: translateY(0rem);
+.c-team{
+  &-section{
+    padding-bottom: 40px;
+    @include media-breakpoint-down(md){
+      padding-bottom: 20px;
     }
   }
-}
-
-
-.c-team-section {
-  
-  &__number {
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 48px;
-    @include media-breakpoint-down(lg) {
-      font-size: 32px;
-      line-height: 32px;
-    }
-  }
-  &__hover {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: rgba(#000, 0.4);
-    transform: translateX(20%);
-    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
-    opacity: 0;
-    z-index: 17;
-    padding: 16px;
-    &-img {
-      width: 16px;
-      height: 16px;
-      margin-right: 8px;
-    }
-    ul {
-      font-size: 16px;
-      line-height: 16px;
-      color: var(--color-light);
-      li {
-        padding: 0 12px;
-      }
-    }
-  }
-  &__info {
-    color: var(--color-light);
-    position: absolute;
-    bottom: 8px;
-    left: 0;
-    right: 0;
-    z-index: 14;
-    padding: 0 40px;
-    width: 100%;
-    margin-bottom: 16px;
-    transition: transform 0.3s ease-out;
-    transform: translateX(0);
-    p {
-      max-width: 73px;
-      text-align: right;
-    }
-    .h2 {
-      text-align: left;
-      text-transform: uppercase;
-      line-height: 26px;
-      span {
-        font-size: 1rem;
-        line-height: 22px;
-        display: block;
-      }
-    }
-  }
-  &__items {
-    .row {
-      margin-left: -20px;
-      margin-right: -20px;
-    }
-  }
-  &__item {
-    overflow: hidden;
-    color: var(--color-text-base);
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+  &__item{
+    display: flex;
     text-decoration: none;
-    text-align: center;
-    display: block;
-    border: 0.0625rem solid var(--color-gray-opacity-12);
-    border-radius: 0.25rem;
-    transition: background-color 0.3s;
-    height: 377px;
-    position: relative;
-    margin-bottom: 40px;
-    @include media-breakpoint-down(lg) {
-      .c-team-section__hover {
-        transform: translateX(0);
+    margin-bottom: 32px;
+    align-items: center;
+    &:hover{
+      .c-team__info span{
+        text-decoration-color: var(--color-blue);
+      }
+      .c-team__img span{
         opacity: 1;
       }
-      .c-team-section__info {
-        transform: translateX(-2rem);
-      }
-    }
-    @include media-breakpoint-down(sm) {
-      margin-bottom: 20px;
-    }
-    &::after,
-    &::before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      margin: 0 auto;
-      z-index: 9;
-      left: 0;
-      right: 0;
-    }
-    &::after {
-      bottom: 0;
-      z-index: 13;
-      background: linear-gradient(
-        180deg,
-        rgba(0, 79, 159, 0.0001) 38.87%,
-        #004f9f 100%
-      );
-    }
-    &::before {
-      top: 0;
-      background-image: url("../images/content/pozadi_stadion.png");
-      background-size: cover;
-      background-repeat: no-repeat;
     }
   }
-  &__img {
-    height: 377px;
-    width: 100%;
+  &__img{
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    overflow: hidden;
     position: relative;
-    z-index: 12;
-    transition: all .3s;
-    img {
+    span{
+      transition: all .3s;
+      opacity: 0;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      font-size: 32px;
+      color: var(--color-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--color-blue);
+    }
+    img{
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: top;
     }
   }
-}
-
-.c-team-section__item:hover {
-  .c-team-section__hover {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  .c-team-section__info {
-    transform: translateY(-2rem);
+  &__info{
+    color: var(--color-blue);
+    padding-left: 24px;
+    @include media-breakpoint-down(md){
+      padding-left: 16px;
+    }
+    span{
+      text-decoration: underline;
+      text-decoration-color: transparent;
+      transition: all .3s;
+      display: block;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 23px;
+      letter-spacing: -0.01em;
+      margin-bottom: 6px;
+    }
   }
 }

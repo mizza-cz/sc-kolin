@@ -6,10 +6,17 @@
 .select2-container {
   .select2-selection--single {
     height: auto;
-    padding: 1px 38px 2px 24px;
+    padding: 9px 68px 4px 32px;
     border-color: var(--color-blue);
     outline: solid transparent 1px;
     transition: all 0.3s;
+    @include media-breakpoint-down(lg){
+      padding-left: 16px;
+      padding-right: 44px;
+      display: flex;
+      align-items: center;
+      padding-top: 2px;
+    }
   }
 }
 .select2-container--open {
@@ -49,22 +56,25 @@
 .select2-container--default
   .select2-selection--single
   .select2-selection__arrow {
-  top: 2px;
-  right: 24px;
-  width: 10px;
+    top: -3px;
+    right: 39px;
+    width: 24px;
+    @include media-breakpoint-down(lg){
+      right: 16px;
+      top: -4px;
+    }
   b {
-    background-image: url("../images/ico/chevron.svg");
+    background-image: url("../images/ico/chevron-down.svg");
     background-repeat: no-repeat;
     background-size: cover;
     border: none;
-    width: 10px;
-    height: 10px;
+    width: 22px;
+    height: 16px;
   }
 }
 .select2-dropdown {
   top: 2px;
   border: 0;
-  border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12),
     0px 1px 10px rgba(0, 0, 0, 0.2);
 }
@@ -81,7 +91,8 @@
     }
   }
   .select2-results__option--selected {
-    background-color: var(--color-gray) !important;
+    background-color: var(--color-dark-blue) !important;
+    color: var(--color-light);
   }
   .select2-results__option--highlighted  {
     background-color: var(--color-blue) !important;
@@ -89,13 +100,19 @@
 }
 .select2-container .select2-selection--single .select2-selection__rendered {
   color: var(--color-blue);
+  font-weight: 400;
   font-size: 16px;
-
-  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
   padding: 0;
 }
 .select2-container--default .select2-selection--single {
-  border: 2px solid var(--color-blue);
-  height: 33px;
+  border: 1px solid var(--color-blue);
+  height: 43px;
+  border-radius: 0;
+  @include media-breakpoint-down(lg){
+    height: 36px;
+  }
 }
 /*! purgecss end ignore */
