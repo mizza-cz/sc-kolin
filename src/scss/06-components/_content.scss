@@ -1,4 +1,4 @@
-.content {
+.o-content {
   &::after {
     display: table;
     clear: both;
@@ -12,6 +12,13 @@
   }
   h1{
     margin: 32px 0 24px 0;
+  }
+  h2{
+    margin-top: 32px;
+    margin-bottom: 24px;
+  }
+  p{
+    margin-bottom: 32px;
   }
 }
 .h1 {

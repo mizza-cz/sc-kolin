@@ -1,0 +1,25 @@
+.tab{
+   margin-bottom: 8px;
+   display: block;
+   &.active{
+      background-color: var(--color-dark-blue);
+      color: var(--color-light);
+   }
+}
+.tab-content{
+   display: none;
+   &.tab-active{
+      display: block;
+   }
+}
+.tabs{
+   flex-wrap: wrap;
+   margin-bottom: 40px;
+   justify-content: center;
+   @include media-breakpoint-down(sm){
+      margin-bottom: 20px;
+   } 
+   &-wrapper{
+      padding-bottom: 40px;
+   }
+}
