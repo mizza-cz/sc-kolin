@@ -1,6 +1,25 @@
 .c-player-detail-section{
   padding-top: 94px;
   margin-bottom: 32px;
+  position: relative;
+  &__name{
+    position: absolute;
+    font-weight: 700;
+    font-size: 192px;
+    line-height: 241px;
+    text-align: center;
+    letter-spacing: -0.05em;
+    bottom: 0;
+    opacity: 0.32;
+    color: var(--color-blue);
+    -webkit-text-stroke: 0.0625rem #171F52;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    @include media-breakpoint-down(xl){
+      display: none;
+    }
+  }
   @include media-breakpoint-down(xl){
     padding-top: 40px;
   }
@@ -13,6 +32,8 @@
 }
 .c-player{
   &__top{
+    position: relative;
+    z-index: 1;
     display: flex;
     align-items: center;
     padding-bottom: 24px;
@@ -129,6 +150,8 @@
     margin-left: -16px;
     margin-right: -16px;
     padding-bottom:16px;
+    position: relative;
+    z-index: 1;
     li{
       padding: 0 16px;
       display: block;
