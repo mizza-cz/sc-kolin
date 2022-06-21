@@ -21,12 +21,10 @@
       left: -6px;
       top: -44px;
       @include media-breakpoint-down(lg) {
-         width: 100px;
-         height: 100px;
-         top: -36px;
-       }
-       @include media-breakpoint-down(sm){
-          left: 12px;
+        width: 90px;
+        height: 90px;
+        top: 4px;
+        left: 9px;
        }
       img {
          transition: all 0.3s;
@@ -70,7 +68,7 @@
          display: flex;
          align-items: center;
          justify-content: flex-end;
-         height: 40px;
+         height: 72px;
       }
    }
   }
@@ -157,12 +155,21 @@
    transition: box-shadow 0.15s ease-in-out;
    display: block;
    position: relative;
-   @include media-breakpoint-down(sm) {
-     padding: 0 12px;
+   padding-left: 52px;
+   &::before{
+     content: 'Menu';
+     position: absolute;
+     left: 0;
+     font-weight: 700;
+      font-size: 18px;
+      line-height: 23px;
+      color: var(--color-light);
+      letter-spacing: -0.01em;
+      top: -9px;
    }
    span {
-     width: 24px;
-     height: 3px;
+     width: 13px;
+     height: 2px;
      background: #fff;
      transform: translateY(-1px);
      box-shadow: 0 2px 5px rgba(255, 103, 47, 0.2);
@@ -171,18 +178,18 @@
      &::after {
        content: "";
        position: absolute;
-       width: 24px;
-       height: 3px;
+       width: 13px;
+       height: 2px;
        background: #fff;
        left: 0;
        right: 0;
        box-shadow: 0 2px 5px rgba(255, 103, 47, 0.2);
      }
      &::before {
-       transform: translateY(-7px);
+       transform: translateY(-5px);
      }
      &::after {
-       transform: translateY(7px);
+       transform: translateY(5px);
      }
    }
    &:focus {
