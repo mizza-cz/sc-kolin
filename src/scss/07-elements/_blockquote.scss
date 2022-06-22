@@ -1,0 +1,20 @@
+blockquote{
+   margin-bottom: 48px;
+   @include media-breakpoint-down(lg){
+      margin-bottom: 24px;
+   }
+  p{
+   font-weight: 400;
+   font-size: 36px;
+   line-height: 148.6%;
+   margin-bottom: 24px;
+   @include media-breakpoint-down(lg){
+      font-size: 26px;
+   }
+  }
+  span{
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 148.6%;
+  }
+ }

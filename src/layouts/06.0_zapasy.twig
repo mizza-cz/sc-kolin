@@ -1,0 +1,20 @@
+{% extends "@components/base/base.twig" %}
+
+{% set title = "06.0_zapasy" %}
+
+{% block main %}
+         {% include "@components/count-down/count-down.twig" %}
+         {% include "@components/matches-section/matches2-section.twig" %}
+         <div class="tabs-wrapper">
+            {% include "@components/menu-section/menu2-section.twig" %}
+            <div class="tab-content tab-active" id="liga">
+               <hr>
+               {% include "@components/matches-section/matches3-section.twig" %}
+            </div>
+            <div class="tab-content" id="zapasy">
+               {% include "@components/matches-section/matches3-section.twig" %}
+            </div>
+         </div>
+         
+         {% include "@components/topstory-section/topstory2-section.twig" %}
+{% endblock %}

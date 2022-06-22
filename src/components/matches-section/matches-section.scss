@@ -5,3 +5,50 @@
       padding: 32px 0;
     }
 }
+.c-matches-section{
+   &__item{
+      @include media-breakpoint-down(lg){
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+       }
+   }
+   &__item:nth-child(odd)
+   {
+      background-color: var(--color-light-gray);
+   }
+   &__teams{
+      @include media-breakpoint-down(lg){
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         h3{
+            padding: 0 8px;
+         }
+      }
+   }
+   &__logos{
+     display: flex;
+     @include media-breakpoint-down(lg){
+      justify-content: center;
+     }
+     img{
+      height: 80px;
+      padding: 4px;
+     }
+   }
+   &__score{
+      font-size: 24px;
+      @include media-breakpoint-down(lg){
+         display: flex;
+         justify-content: center;
+         div{
+            padding: 0 8px;
+         }
+      }
+   }
+}
+.kolin{
+   color: var(--color-blue);
+   font-weight: bold;
+}

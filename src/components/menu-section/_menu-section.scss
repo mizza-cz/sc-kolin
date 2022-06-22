@@ -55,4 +55,19 @@
       margin-top: 16px;
     }
   }
+  &__filtr{
+    display: flex;
+    justify-content: center;
+    li{
+      padding: 0 8px;
+      a{
+        text-decoration-color: transparent;
+        transition: all .3s;
+        &:hover,
+        &.active{
+          text-decoration-color: inherit;
+        }
+      }
+    }
+  }
 }
