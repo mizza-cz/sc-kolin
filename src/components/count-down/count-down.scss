@@ -8,11 +8,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    @include media-breakpoint-down(sm){
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
   &__title {
     width: 141px;
     text-align: center;
     color: var(--color-blue);
+    @include media-breakpoint-down(sm){
+      padding-left: 12px;
+      text-align: left;
+    }
   }
 }
 .timer {
@@ -22,6 +31,9 @@
   justify-content: center;
   position: relative;
   z-index: 1;
+  @include media-breakpoint-down(sm){
+    padding-left: 0;
+  }
   &__wrapper {
     display: block;
   }
@@ -53,6 +65,9 @@
         color: var(--color-blue);
         left: 0;
         top: 8px;
+        @include media-breakpoint-down(md){
+          top: 4px;
+        }
       }
     }
   }
