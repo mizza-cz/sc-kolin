@@ -1,0 +1,37 @@
+.c-table-section{
+   margin-bottom: 40px;
+   .o-content{
+      td img{
+         width: 24px !important;
+         height: 24px !important;
+         display: block;
+         object-fit: contain;
+       }
+       th:first-child,
+       td:first-child{
+         padding-left: 28px !important;
+         width: 50px;
+       }
+       td,td{
+         width: 70px;
+       }
+       th:nth-child(2),
+       td:nth-child(2){
+         width: 50px;
+       }
+       th:nth-child(3),
+       td:nth-child(3){
+         width: auto;
+       }
+       th:nth-child(-n+3),
+       td:nth-child(-n+3){
+         text-align: left;
+       }
+   }
+   .kolin{
+      td{
+         font-weight: 700;
+         color: var(--color-blue);
+      }
+   }
+}
