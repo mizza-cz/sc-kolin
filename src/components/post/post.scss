@@ -1,7 +1,7 @@
 
 .c-post {
    display: flex;
-    .c-post__img:hover{
+    &__img:hover{
       img{
         transform: scale(1.1);
       }
@@ -15,8 +15,11 @@
    min-width: 280px;
    margin-right: 32px;
    overflow: hidden;
+   width: 100%;
+   display: block;
    img{
     transition: all .3s;
+    display: block;
    }
    @include media-breakpoint-down(sm){
       margin-right: 0;
