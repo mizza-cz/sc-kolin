@@ -15,6 +15,9 @@
       height: 40px;
       background-color: #303137;
       display: block;
+      @include media-breakpoint-down(md){
+        height: 20px;
+      }
    }
    &__logo{
       position: absolute;
