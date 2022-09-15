@@ -1,7 +1,7 @@
 .c-juniors-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 48px;
+  margin-bottom: 16px;
 
   li {
     margin-bottom: 16px;
@@ -44,6 +44,9 @@
 }
 .c-juniors-section {
   padding-top: 40px;
+  .menu-section__links {
+    justify-content: start;
+  }
   .tabs-wrapper {
     padding-bottom: 20px;
   }

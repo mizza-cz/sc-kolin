@@ -44,6 +44,10 @@
   }
   &__score {
     font-size: 24px;
+    span {
+      font-weight: 700;
+      font-size: 28px;
+    }
     a {
       transition: all 0.3s;
       color: var(--color-blue);
