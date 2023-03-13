@@ -10,21 +10,26 @@
   > :last-child {
     margin-bottom: 0;
   }
+  iframe {
+    display: block;
+    margin: 32px 0;
+    width: 100%;
+  }
   h1,
   h2,
-  h3{
+  h3 {
     margin-top: 32px;
     margin-bottom: 24px;
   }
-  p{
+  p {
     margin-bottom: 32px;
   }
-  td{
-    img{
+  td {
+    img {
       margin: 0;
     }
   }
-  img{
+  img {
     width: 100%;
     height: auto;
     margin: 32px 0;
@@ -95,7 +100,7 @@
     line-height: 125%;
   }
 }
-.p1{
+.p1 {
   font-weight: 400;
   font-size: 20px;
   line-height: 147.5%;
@@ -105,7 +110,7 @@
   font-size: 14px;
   line-height: 147.5%;
 }
-.p3{
+.p3 {
   font-weight: 400;
   font-size: 12px;
   line-height: 120%;
