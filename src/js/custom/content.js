@@ -1,5 +1,5 @@
 tablesWrap();
-iframesWrap();
+// iframesWrap();
 
 // TABLE (wysiwyg editor) responsive
 function tablesWrap() {
