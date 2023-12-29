@@ -19,6 +19,8 @@
   }
 }
 .nice.table {
+  width: 100% !important;
+  min-width: 100%;
   tr:nth-child(2n) {
     background-color: transparent !important;
   }
@@ -30,11 +32,21 @@
     font-weight: 700;
     border-bottom: none;
     vertical-align: middle;
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      order: -1;
+    }
   }
   tr:ntn-child(even) {
     background-color: auto;
   }
-
+  tr {
+    @include media-breakpoint-down(md) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
   td {
     vertical-align: middle;
     background-color: transparent !important;
